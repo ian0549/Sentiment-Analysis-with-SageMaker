@@ -37,7 +37,8 @@ Now that the repository has been cloned into the notebook instance you may navig
 
 So far we have been accessing our model endpoint by constructing a predictor object which uses the endpoint and then just using the predictor object to perform inference. What if we wanted to create a web app which accessed our model? The way things are set up currently makes that not possible since in order to access a SageMaker endpoint the app would first have to authenticate with AWS using an IAM role which included access to SageMaker endpoints. However, there is an easier way! We just need to use some additional AWS services.
 
-![alt text] (https://github.com/ian0549/Sentiment-Analysis-with-SageMaker/blob/master/Web%20App%20Diagram.svg)
+<img src=“https://github.com/ian0549/Sentiment-Analysis-with-SageMaker/blob/master/Web%20App%20Diagram.svg”>
+
 
 The diagram above gives an overview of how the various services will work together. On the far right is the model which we trained above and which is deployed using SageMaker. On the far left is our web app that collects a user's movie review, sends it off and expects a positive or negative sentiment in return.
 
