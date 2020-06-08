@@ -13164,7 +13164,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13204,7 +13204,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">read_imdb_data</span><span class="p">()</span>
@@ -13246,7 +13246,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="kn">import</span> <span class="n">shuffle</span>
@@ -13275,7 +13275,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_X</span><span class="p">,</span> <span class="n">test_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">test_y</span> <span class="o">=</span> <span class="n">prepare_imdb_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
@@ -13315,7 +13315,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">train_X</span><span class="p">[</span><span class="mi">100</span><span class="p">])</span>
@@ -13336,8 +13336,8 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>breathtaking, this is without doubt the best anime cartoon ever made. i first saw castle in the sky in the late 80s as a child and it left a lasting impression. years went by and i forgot the title of the film, and only by chance browsing on the internet i found this masterpiece again. after reading other peoples reviews and analysis I&#39;m not surprised it has such acclaim and touched so many because it does leave an impression. a true fantasy adventure, a must see for all children and adults. its best not giving the story away so i would say watch this movie will a clear and open mind. if you have kids treat them to this i promise you they will love it. there&#39;s not much to say about this piece of art but if you&#39;ve not seen it watch it and enjoy.
-1
+<pre>Worst movie ever made!!! Please see the Real movie reviews from the pros on this movie.Check Rotten Tomatoes on the web for some good independent reviews on this film. The comments made on this site are apparently from folks with some financial interest in this film. I find the positive comments very misleading. I find it amazing how the negative comments are so bad against this movie and the positive comments sound like an Academy Awards Speech. Don&#39;t waste your hard earned money!!!!!! This Film is retarded!! I can&#39;t believe a film like this would ever be made. Why would Hollywood waste their time on such junk? This film is an attempt at nothing. I ask myself what looser would actually sink their money producing such trash. I went to blockbuster and the attendant even told us not to waste our time or money. I didn&#39;t listen and I did waste my time and cash. Please don&#39;t make the same mistake! It really is the &#34;Worst movie ever made!&#34;
+0
 </pre>
 </div>
 </div>
@@ -13356,7 +13356,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
@@ -13394,7 +13394,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Apply review_to_words to a review (train_X[100] or any other review)</span>
@@ -13412,79 +13412,105 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;breathtak&#39;,
- &#39;without&#39;,
- &#39;doubt&#39;,
- &#39;best&#39;,
- &#39;anim&#39;,
- &#39;cartoon&#39;,
+<pre>[&#39;worst&#39;,
+ &#39;movi&#39;,
  &#39;ever&#39;,
  &#39;made&#39;,
- &#39;first&#39;,
- &#39;saw&#39;,
- &#39;castl&#39;,
- &#39;sky&#39;,
- &#39;late&#39;,
- &#39;80&#39;,
- &#39;child&#39;,
- &#39;left&#39;,
- &#39;last&#39;,
- &#39;impress&#39;,
- &#39;year&#39;,
- &#39;went&#39;,
- &#39;forgot&#39;,
- &#39;titl&#39;,
- &#39;film&#39;,
- &#39;chanc&#39;,
- &#39;brows&#39;,
- &#39;internet&#39;,
- &#39;found&#39;,
- &#39;masterpiec&#39;,
- &#39;read&#39;,
- &#39;peopl&#39;,
- &#39;review&#39;,
- &#39;analysi&#39;,
- &#39;surpris&#39;,
- &#39;acclaim&#39;,
- &#39;touch&#39;,
- &#39;mani&#39;,
- &#39;leav&#39;,
- &#39;impress&#39;,
- &#39;true&#39;,
- &#39;fantasi&#39;,
- &#39;adventur&#39;,
- &#39;must&#39;,
+ &#39;pleas&#39;,
  &#39;see&#39;,
- &#39;children&#39;,
- &#39;adult&#39;,
- &#39;best&#39;,
- &#39;give&#39;,
- &#39;stori&#39;,
- &#39;away&#39;,
- &#39;would&#39;,
- &#39;say&#39;,
- &#39;watch&#39;,
+ &#39;real&#39;,
  &#39;movi&#39;,
- &#39;clear&#39;,
- &#39;open&#39;,
- &#39;mind&#39;,
- &#39;kid&#39;,
- &#39;treat&#39;,
- &#39;promis&#39;,
- &#39;love&#39;,
- &#39;much&#39;,
- &#39;say&#39;,
- &#39;piec&#39;,
- &#39;art&#39;,
- &#39;seen&#39;,
- &#39;watch&#39;,
- &#39;enjoy&#39;]</pre>
+ &#39;review&#39;,
+ &#39;pro&#39;,
+ &#39;movi&#39;,
+ &#39;check&#39;,
+ &#39;rotten&#39;,
+ &#39;tomato&#39;,
+ &#39;web&#39;,
+ &#39;good&#39;,
+ &#39;independ&#39;,
+ &#39;review&#39;,
+ &#39;film&#39;,
+ &#39;comment&#39;,
+ &#39;made&#39;,
+ &#39;site&#39;,
+ &#39;appar&#39;,
+ &#39;folk&#39;,
+ &#39;financi&#39;,
+ &#39;interest&#39;,
+ &#39;film&#39;,
+ &#39;find&#39;,
+ &#39;posit&#39;,
+ &#39;comment&#39;,
+ &#39;mislead&#39;,
+ &#39;find&#39;,
+ &#39;amaz&#39;,
+ &#39;neg&#39;,
+ &#39;comment&#39;,
+ &#39;bad&#39;,
+ &#39;movi&#39;,
+ &#39;posit&#39;,
+ &#39;comment&#39;,
+ &#39;sound&#39;,
+ &#39;like&#39;,
+ &#39;academi&#39;,
+ &#39;award&#39;,
+ &#39;speech&#39;,
+ &#39;wast&#39;,
+ &#39;hard&#39;,
+ &#39;earn&#39;,
+ &#39;money&#39;,
+ &#39;film&#39;,
+ &#39;retard&#39;,
+ &#39;believ&#39;,
+ &#39;film&#39;,
+ &#39;like&#39;,
+ &#39;would&#39;,
+ &#39;ever&#39;,
+ &#39;made&#39;,
+ &#39;would&#39;,
+ &#39;hollywood&#39;,
+ &#39;wast&#39;,
+ &#39;time&#39;,
+ &#39;junk&#39;,
+ &#39;film&#39;,
+ &#39;attempt&#39;,
+ &#39;noth&#39;,
+ &#39;ask&#39;,
+ &#39;looser&#39;,
+ &#39;would&#39;,
+ &#39;actual&#39;,
+ &#39;sink&#39;,
+ &#39;money&#39;,
+ &#39;produc&#39;,
+ &#39;trash&#39;,
+ &#39;went&#39;,
+ &#39;blockbust&#39;,
+ &#39;attend&#39;,
+ &#39;even&#39;,
+ &#39;told&#39;,
+ &#39;us&#39;,
+ &#39;wast&#39;,
+ &#39;time&#39;,
+ &#39;money&#39;,
+ &#39;listen&#39;,
+ &#39;wast&#39;,
+ &#39;time&#39;,
+ &#39;cash&#39;,
+ &#39;pleas&#39;,
+ &#39;make&#39;,
+ &#39;mistak&#39;,
+ &#39;realli&#39;,
+ &#39;worst&#39;,
+ &#39;movi&#39;,
+ &#39;ever&#39;,
+ &#39;made&#39;]</pre>
 </div>
 
 </div>
@@ -13521,7 +13547,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -13573,7 +13599,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Preprocess data</span>
@@ -13594,7 +13620,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Wrote preprocessed data to cache file: preprocessed_data.pkl
+<pre>Read preprocessed data from cache file: preprocessed_data.pkl
 </pre>
 </div>
 </div>
@@ -13624,7 +13650,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13662,7 +13688,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">word_dict</span> <span class="o">=</span> <span class="n">build_dict</span><span class="p">(</span><span class="n">train_X</span><span class="p">)</span>
@@ -13685,24 +13711,20 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
+<p>There five most frequent words are movi, film, one, like and time.</p>
+<p>It makes sense that they appear, because those words are commonly used in movie review.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Use this space to determine the five most frequently appearing words in the training set.</span>
 
-<span class="n">counter</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">word_dict</span><span class="p">)</span>
-
-<span class="n">popular_words</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">counter</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">counter</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
-
-<span class="n">top_5</span> <span class="o">=</span> <span class="n">popular_words</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">top_5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">word_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())[:</span><span class="mi">5</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -13719,7 +13741,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;epitom&#39;, &#39;victorian&#39;, &#39;ingrid&#39;, &#39;optimist&#39;, &#39;asset&#39;]
+<pre>[&#39;movi&#39;, &#39;film&#39;, &#39;one&#39;, &#39;like&#39;, &#39;time&#39;]
 </pre>
 </div>
 </div>
@@ -13884,6 +13906,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
+<p>It will be helpful when it comes to making sure all the training data has the same length. There might be a problem because it will utilize a lot of memory if it had a very large corpus .</p>
 
 </div>
 </div>
@@ -15236,6 +15259,8 @@ Starting  neg  files
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
+<p>Review 1: This song break so many hearts    Prediction: Positive sentiment</p>
+<p>Review 2: I can't find my heart nowhere near this movie.  Prediction: Negative Sentiment</p>
 
 </div>
 </div>
