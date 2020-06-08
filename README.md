@@ -47,11 +47,18 @@ In the middle is where some of the magic happens. We will construct a Lambda fun
 
 Lastly, the method we will use to execute the Lambda function is a new endpoint that we will create using API Gateway. This endpoint will be a url that listens for data to be sent to it. Once it gets some data it will pass that data on to the Lambda function and then return whatever the Lambda function returns. Essentially it will act as an interface that lets our web app communicate with the Lambda function.
 
+
+
 ### Setting up a Lambda function
+
+
 
 The first thing we are going to do is set up a Lambda function. This Lambda function will be executed whenever our public API has data sent to it. When it is executed it will receive the data, perform any sort of processing that is required, send the data (the review) to the SageMaker endpoint we've created and then return the result.
 
+
+
 #### Part A: Create an IAM Role for the Lambda function
+
 
 Since we want the Lambda function to call a SageMaker endpoint, we need to make sure that it has permission to do so. To do this, we will construct a role that we can later give the Lambda function.
 
@@ -98,20 +105,29 @@ Once you have copy and pasted the code above into the Lambda code editor, replac
 
 
 
-###Setting up API Gateway
+### Setting up API Gateway
+
+
 Now that our Lambda function is set up, it is time to create a new API using API Gateway that will trigger the Lambda function we have just created.
+
 
 Using AWS Console, navigate to Amazon API Gateway and then click on Get started.
 
+
 On the next page, make sure that New API is selected and give the new api a name, for example, sentiment_analysis_api. Then, click on Create API.
+
 
 Now we have created an API, however it doesn't currently do anything. What we want it to do is to trigger the Lambda function that we created earlier.
 
+
 Select the Actions dropdown menu and click Create Method. A new blank method will be created, select its dropdown menu and select POST, then click on the check mark beside it.
+
 
 For the integration point, make sure that Lambda Function is selected and click on the Use Lambda Proxy integration. This option makes sure that the data that is sent to the API is then sent directly to the Lambda function with no processing. It also means that the return value must be a proper response object as it will also not be processed by API Gateway.
 
+
 Type the name of the Lambda function you created earlier into the Lambda Function text entry box and then click on Save. Click on OK in the pop-up box that then appears, giving permission to API Gateway to invoke the Lambda function you created.
+
 
 The last step in creating the API Gateway is to select the Actions dropdown and click on Deploy API. You will need to create a new Deployment stage and name it anything you like, for example prod.
 
